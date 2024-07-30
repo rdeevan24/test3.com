@@ -14,7 +14,7 @@ body {
 h1 {
     text-align: center;
     font-family: "Sofia", sans-serif;
-    font-size: 70px;
+    font-size: 4rem; /* Adjust font size for responsiveness */
     color: white;
 }
 
@@ -23,14 +23,15 @@ h2 {
     font-family: Audiowide;
     color: white;
     margin-bottom: 10px; /* Add margin to avoid overlap */
+    font-size: 2rem; /* Adjust font size for responsiveness */
 }
 
 #DP {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Adjust width for responsiveness */
+    height: 150px; /* Adjust height for responsiveness */
     border-radius: 50%;
     border: 2px solid #000;
     padding: 5px;
@@ -41,14 +42,14 @@ h2 {
     text-align: center;
     color: white;
     text-align: justify;
-    margin: 0 200px;
+    margin: 0 10%; /* Adjust margin for responsiveness */
 }
 
 .Who {
     font-family: Audiowide;
     text-align: center;
-    margin-top: 25px;
-    font-size: larger;
+    margin-top: 20px; /* Adjust margin for responsiveness */
+    font-size: 1.2rem; /* Adjust font size for responsiveness */
     color: white;
 }
 
@@ -56,18 +57,74 @@ h2 {
     font-family: Audiowide;
     color: white;
     text-align: center;
+    padding: 20px; /* Add padding for better spacing on mobile */
 }
 
 #SK {
     display: inline-block;
     margin: 10px;
-    width: 150px;
-    height: 150px;
+    width: 100px; /* Adjust width for responsiveness */
+    height: 100px; /* Adjust height for responsiveness */
     border-radius: 50%;
     border: 2px solid white;
     padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.material-icons{
-    background-color: aliceblue;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #DP {
+        width: 120px;
+        height: 120px;
+    }
+
+    .About {
+        margin: 0 5%;
+    }
+
+    .Who {
+        font-size: 1rem;
+    }
+
+    #SK {
+        width: 80px;
+        height: 80px;
+    }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #DP {
+        width: 100px;
+        height: 100px;
+    }
+
+    .About {
+        margin: 0 2%;
+    }
+
+    .Who {
+        font-size: 0.8rem;
+    }
+
+    #SK {
+        width: 60px;
+        height: 60px;
+    }
+}
+
