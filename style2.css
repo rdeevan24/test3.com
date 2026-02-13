@@ -5,10 +5,9 @@
 }
 
 body {
-    background-image: url('./Images/pexels-photo-2387793.jpeg'); /* Replace with actual image URL */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #000000; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif; 
 }
 
 h1 {
@@ -71,6 +70,43 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.Downloads {
+    text-align: center;
+    padding: 2rem;
+}
+
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.download-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    transition: transform 0.2s, background-color 0.2s;
+    font-family: 'Audiowide', cursive;
+}
+
+.download-card:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+}
+
+.download-card i {
+    font-size: 1.5rem;
+    color: #00e6e6;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
@@ -99,6 +135,7 @@ h2 {
         height: 80px;
     }
 }
+
 
 @media (max-width: 480px) {
     h1 {
